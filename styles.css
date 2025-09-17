@@ -1,14 +1,14 @@
 /* Portfolio Styles */
 :root {
-  --primary: #2563eb;
-  --primary-dark: #1d4ed8;
-  --secondary: #64748b;
-  --accent: #f59e0b;
-  --text: #1e293b;
-  --text-muted: #64748b;
+  --primary: #9333ea;        /* Purple 600 */
+  --primary-dark: #7e22ce;   /* Purple 700 */
+  --secondary: #0ea5e9;      /* Sky 500 */
+  --accent: #22c55e;         /* Green 500 */
+  --text: #0f172a;           /* Slate 900 */
+  --text-muted: #475569;     /* Slate 600 */
   --bg: #ffffff;
-  --bg-alt: #f8fafc;
-  --border: #e2e8f0;
+  --bg-alt: #f5f3ff;         /* Purple 50 */
+  --border: #e9d5ff;         /* Purple 200 */
   --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --radius: 0.5rem;
@@ -148,9 +148,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.accent {
-  color: var(--primary);
-}
+.accent { color: var(--primary); }
 
 .hero-text p {
   font-size: 1.125rem;
@@ -200,14 +198,7 @@ body {
   justify-content: center;
 }
 
-.chips li {
-  background: var(--primary);
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 2rem;
-  font-weight: 500;
-  font-size: 0.875rem;
-}
+.chips li { background: var(--secondary); color: #fff; padding: 0.5rem 1rem; border-radius: 2rem; font-weight: 500; font-size: 0.875rem; }
 
 /* Cards */
 .grid {
@@ -229,12 +220,7 @@ body {
   box-shadow: var(--shadow-lg);
 }
 
-.card-media {
-  height: 200px;
-  background: var(--bg-alt);
-  position: relative;
-  overflow: hidden;
-}
+.card-media { height: 260px; background: var(--bg-alt); position: relative; overflow: hidden; }
 
 .card-media img,
 .card-media video {
