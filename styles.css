@@ -1,14 +1,14 @@
 /* Portfolio Styles */
 :root {
-  --primary: #9333ea;        /* Purple 600 */
-  --primary-dark: #7e22ce;   /* Purple 700 */
-  --secondary: #0ea5e9;      /* Sky 500 */
-  --accent: #22c55e;         /* Green 500 */
-  --text: #0f172a;           /* Slate 900 */
-  --text-muted: #475569;     /* Slate 600 */
+  --primary: #0a0a0a;        /* Black (primary) */
+  --primary-dark: #000000;   /* Pure black */
+  --secondary: #16a34a;      /* Green 600 (secondary) */
+  --accent: #16a34a;         /* Accent green */
+  --text: #0a0a0a;           /* Near black */
+  --text-muted: #525252;     /* Neutral 600 */
   --bg: #ffffff;
-  --bg-alt: #f5f3ff;         /* Purple 50 */
-  --border: #e9d5ff;         /* Purple 200 */
+  --bg-alt: #f6f6f6;         /* Neutral 100 */
+  --border: #e5e7eb;         /* Gray 200 */
   --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --radius: 0.5rem;
@@ -87,13 +87,21 @@ body {
 }
 
 .btn-primary {
-  background: var(--primary);
-  color: white;
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
 }
 
-.btn-primary:hover {
-  background: var(--primary-dark);
+.btn-primary:hover,
+.btn-primary:focus {
+  background: var(--primary);
+  color: #fff;
   transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
 }
 
 .btn-ghost {
@@ -220,7 +228,10 @@ body {
   box-shadow: var(--shadow-lg);
 }
 
-.card-media { height: 260px; background: var(--bg-alt); position: relative; overflow: hidden; }
+.card-media { height: 200px; background: var(--bg-alt); position: relative; overflow: hidden; }
+
+/* Make certificate images fit without cropping */
+.card-media img { object-fit: contain; background: #ffffff; }
 
 .card-media img,
 .card-media video {
